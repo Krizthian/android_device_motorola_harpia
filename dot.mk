@@ -15,13 +15,16 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := lineage_harpia
+PRODUCT_NAME := dot_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
